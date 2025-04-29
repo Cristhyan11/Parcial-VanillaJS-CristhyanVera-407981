@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        emailjs.init("2lDo-OBqlfRaGuw5C"); // Reemplaza "2lDo-OBqlfRaGuw5C" con tu clave pública válida
+    </script>
+    <script src="./scripst.js"></script>
+    <title>Comentarios</title>
+</head>
+<body>
+    <section>
+        <div class="card">
+            <div class="description">
+                <h1>Comentarios</h1>
+                <p>¡Hola! Si deseas dejarme un comentario, por favor completa el formulario a continuación. Tu opinión es muy importante para mí.</p>
+                <!-- Imagen alusiva -->
+                <img src="./assets/comentarios.gif" alt="Interacción de comentarios" class="imgcomentario">
+            </div>
+            <section class="comentario">
+                <!-- Formulario para enviar el comentario -->
+                <form id="commentForm">
+                    <fieldset>
+                        <legend>Deja tu comentario</legend>
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required title="Por favor, ingresa tu nombre." aria-label="Campo para ingresar tu nombre">
+                        
+                        <label for="comment">Comentario:</label>
+                        <textarea id="comment" name="comment" placeholder="Escribe tu comentario aquí" required title="Por favor, ingresa tu comentario." aria-label="Campo para ingresar tu comentario"></textarea>
+                        
+                        <button type="submit" class="link_card">Enviar</button>
+                    </fieldset>
+                </form>
+                <div class="links">
+                    <a href="./index.html" class="link_card" aria-label="Volver a la página de inicio">Volver a Inicio</a>
+                </div>
+            </section>
+        </div>
+    </section>
+</body>
+</html>

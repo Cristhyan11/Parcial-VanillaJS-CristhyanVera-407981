@@ -1,0 +1,205 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Card container */
+.card {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Avatar styles */
+.avatar-container {
+    margin-bottom: 25px;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 60%;
+    object-fit: cover;
+    border: 3px solid #007BFF;
+}
+
+/* Description section */
+.description {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.description h1{
+    font-size: 24px;
+    color: #007BFF;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.description h2 {
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+/* Contact section */
+.contact {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+/* Links section */
+.links {
+    margin-bottom: 20px;
+}
+
+.links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Button and link styles */
+.link_card {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.link_card:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+/* Ajustar el estilo del enlace en la sección .links */
+.links a {
+    display: inline-block; /* Cambiar de block a inline-block para que no ocupe todo el ancho */
+    width: auto; /* Eliminar el ancho fijo */
+    padding: 10px 20px; /* Ajustar el espaciado interno */
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007BFF;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.links a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Lists */
+.card ul {
+    text-align: left;
+    margin-top: 10px;
+    padding: 0;
+    list-style-type: none;
+}
+/* Gif comentario */
+.imgcomentario{
+    width: 100%;
+    height: auto;
+    max-width: 150px; /* Limitar el ancho máximo de la imagen */
+    margin: left; /* Centrar la imagen horizontalmente */
+    display: block; /* Asegurarse de que la imagen sea un bloque */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para la imagen */
+}
+.card li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+/* Experience list */
+.experience-list li,
+.education-list li {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.experience-list li:hover,
+.education-list li:hover {
+    color: #007BFF;
+}
+/* Ajustar etiquetas */
+.comentario label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+/* Estilo para el formulario */
+.comentario form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Espaciado entre los campos */
+.comentario input,
+.comentario textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/* Estilo para el campo de nombre */
+#name {
+    width: 200px; /* Ancho fijo para el campo de nombre */
+    resize: none; /* Evita que el usuario cambie el tamaño */
+}
+/* Estilo para el campo de comentario */
+#comment {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 150px; /* Altura fija para el campo de comentario */
+    resize: none; /* Evita que el usuario cambie el tamaño */
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .card {
+        padding: 15px;
+    }
+
+    .avatar {
+        width: 120px;
+        height: 120px;
+    }
+
+    .link_card {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
